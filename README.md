@@ -1,5 +1,7 @@
 # etf-world
 
+[Pure.CSS快速指南](http://www.vue5.com/purecss/purecss_quick_guide.html)
+
 ## Project setup
 ```
 yarn install
