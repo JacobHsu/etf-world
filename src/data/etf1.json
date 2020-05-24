@@ -1,0 +1,29 @@
+{
+    "table1" : [
+        { "iso": "ar", "country": "Argentina", "name":"阿根廷", "etf": "ARGT" },
+        { "iso": "au", "country": "Australia", "name":"澳大利亞", "etf": "EWA" },
+        { "iso": "at", "country": "Austria", "name":"奧地利", "etf": "EWO" },
+        { "iso": "be", "country": "Belgium", "name":"比利時", "etf": "EWK" },
+        { "iso": "br", "country": "Brazil", "name":"巴西", "etf": "EWZ" },
+        { "iso": "ca", "country": "Canada", "name":"加拿大", "etf": "EWC" },
+        { "iso": "cl", "country": "Chile", "name":"智利", "etf": "ECH" },
+        { "iso": "cn", "country": "China", "name":"中國", "etf": "MCHI" },
+        { "iso": "co", "country": "Colombia", "name":"哥倫比亞", "etf": "ICOL" },
+        { "iso": "dk", "country": "Denmark", "name":"丹麥", "etf": "EDEN" },
+        { "iso": "eg", "country": "Egypt", "name":"埃及", "etf": "EGPT" },
+        { "iso": "fi", "country": "Finland", "name":"芬蘭", "etf": "EFNL" },
+        { "iso": "fr", "country": "France", "name":"法國", "etf": "EWQ" },
+        { "iso": "de", "country": "Germany", "name":"德國", "etf": "EWG" },
+        { "iso": "gr", "country": "Greece", "name":"希臘", "etf": "GREK" },
+        { "iso": "hk", "country": "Hong Kong", "name":"香港", "etf": "EWH" },
+        { "iso": "in", "country": "India", "name":"印度", "etf": "INDA" },
+        { "iso": "id", "country": "Indonesia", "name":"印尼", "etf": "EIDO" },
+        { "iso": "ie", "country": "Ireland", "name":"愛爾蘭", "etf": "EIRL" },
+        { "iso": "il", "country": "Israel", "name":"以色列", "etf": "EIS" },
+        { "iso": "it", "country": "Italy", "name":"意大利", "etf": "EWI" },
+        { "iso": "jp", "country": "Japan", "name":"日本", "etf": "EWJ" },
+        { "iso": "kr", "country": "Korea", "name":"韓國", "etf": "EWY" },
+        { "iso": "my", "country": "Malaysia", "name":"馬來西亞", "etf": "EWM" },
+        { "iso": "mx", "country": "Mexico", "name":"墨西哥", "etf": "EWW" }
+    ]
+}
