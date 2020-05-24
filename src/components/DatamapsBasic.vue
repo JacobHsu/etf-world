@@ -1,5 +1,5 @@
 <template>
-  <div class="world">
+  <div>
     <!-- <h4>Basic:</h4> -->
     <vue-datamaps :geographyConfig="geographyConfig"/>
     <!-- <vue-datamaps/> -->
@@ -26,18 +26,11 @@ export default {
 </script>
 
 <style>
-.world {
-  position: absolute;
-  left: 25%;
-  width: 100vh; 
-  height: 55vh; 
-  /* border:1px dotted blue;  */
-}
-.datamap {
-    position: absolute;
-    top: 0px;
-    left: 0;
+.map {
+    height: 0;
     width: 100%;
-    height: 100%;
+    padding-top: 45%;
+    position: relative;
+    /* border:1px dotted blue;  */
 }
 </style>
