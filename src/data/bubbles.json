@@ -1,0 +1,14 @@
+{
+    "data": [
+        {
+            "name": "VTI",
+            "radius": 5,
+            "yeild": 0,
+            "country": "USA",
+            "centered": "USA",
+            "date": "1986-06-05",
+            "significance": "Centered on US",
+            "fillKey": "USA"
+        }
+    ]
+}
