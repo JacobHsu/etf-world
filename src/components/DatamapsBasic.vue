@@ -8,7 +8,7 @@
       :fills="fills"
       @custom:popup-bubble="popupTemplate"
       bubbles
-     
+      labels
     >
      <!-- labels -->
       <div slot="hoverBubbleInfo" class="hoverinfo" style="text-align:center;">
@@ -39,7 +39,7 @@ export default {
       },
       geographyConfig: {
         borderColor: '#DEDEDE',
-        borderWidth: 0.75,
+        borderWidth: 1,
         highlightBorderWidth: 2,
         highlightBorderOpacity: 1,
         dataUrl:'world.json',

@@ -1,15 +1,18 @@
 <template>
   <div class="hello">
     <!-- <h1>{{ msg }}</h1> -->
-    <div class="pure-u-1 pure-u-lg-1-3 pure-u-xl-1-5" style="min-width: 350px;">
-        <etf-table :etfs="items"/>
+    <div class="pure-u-1 pure-u-lg-1-3 pure-u-xl-1-5" style="max-width: 420px;">
+        <etf-table :etfs="table1"/>
+    </div>
+    <div class="pure-u-1 pure-u-lg-1-3 pure-u-xl-1-5" style="max-width: 600px;">
+        <etf-table :etfs="table2"/>
     </div>
 
   </div>
 </template>
 
 <script>
-import tableData from '../data/etf1.json'
+import tableData from '../data/etfs.json'
 import EtfTable from '@/components/EtfTable.vue'
 export default {
   name: 'HelloWorld',
@@ -21,7 +24,8 @@ export default {
   },
   data() {
     return {
-      items: tableData.table1
+      table1: tableData.table1,
+      table2: tableData.table2
     }
   },
   created () {
