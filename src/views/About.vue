@@ -1,14 +1,15 @@
 <template>
   <div class="about">
     <h1>This is an about page</h1>
-    <div class="Chart">
-      <line-example :chartdata="chart1" :width="100" :height="50"/>
-      <line-example :chartdata="chart2" :width="100" :height="50"/>
+    <div class="Chart" >
+      <line-example :chart-data="chartData(datacollection.VT)" :options="options" :width="100" :height="50" />
+      <line-example :chart-data="chartData(datacollection.VWO)" :options="options" :width="100" :height="50" />
     </div>
   </div>
 </template>
 <script>
 import LineExample from '@/components/LineExample'
+import axios from 'axios'
 
 export default {
   name: 'About',
@@ -17,11 +18,56 @@ export default {
   },
   data() {
     return {
-      chart1: [ '71.75', '70.41', '70.48', '71.09', '69.88' ],
-      chart2: [ '19.94', '19.66', '20.72', '21.53', '21.27' ]
+      datacollection: {},
+      options: {}
     }
   },
-  mounted() {},
+  mounted() {
+    this.getData()
+  },
+  methods: {
+    chartData(etf) {
+      return {
+        labels: ['', '', '', '', '', '', ''],
+        datasets: [
+          {
+            label: '',
+            backgroundColor: '#fff',
+            data: etf,
+          },
+        ],
+      }
+    },
+    fillData (res) {
+      this.datacollection = res.data.data
+      this.options = {
+        responsive: true,
+        maintainAspectRatio: false,
+        legend: {
+          display: false
+        },
+        scales: {
+          xAxes: [
+            {
+              display: false, //this will remove all the x-axis grid lines
+            },
+          ],
+          yAxes: [
+            {
+              display: false, //this will remove all the y-axis grid lines
+            },
+          ]
+        },
+        tooltips: {
+          displayColors: false
+        }
+      }
+    },
+    getData() {
+      const api = process.env.NODE_ENV === 'production' ? 'https://node-etfs-api.herokuapp.com/api/etfs' : 'https://node-etfs-api.herokuapp.com/api/etfs';
+      axios.get(api).then(this.fillData)
+    }
+  }
 }
 </script>
 <style>
