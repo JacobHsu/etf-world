@@ -45,12 +45,12 @@ export default {
         dataUrl:'world.json',
       },
       data: {
-        'USA': { fillKey: 'active' }
+        'blue': { fillKey: 'active' }
       },
       fills: {
         defaultFill: '#ABDDA4',
         authorHasTraveledTo: "#fa0fa0",
-        USA: 'blue',
+        blue: 'blue',
         RUS: 'red',
         active: 'rgb(113, 142, 179)'
       },
@@ -93,7 +93,4 @@ export default {
   position: relative;
   /* border:1px dotted blue;  */
 }
-/* .datamaps-subunit:hover {
-  stroke-width: 2px;
-} */
 </style>

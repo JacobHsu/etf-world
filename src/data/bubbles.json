@@ -3,12 +3,57 @@
         {
             "name": "ARGT",
             "radius": 5,
+            "fillKey": "blue",
             "iso": "ar",
             "country": "ARG",
             "centered": "ARG",
-            "fillKey": "USA",
+            "capital": "Buenos Aires",
             "latitude": -34.601609,
             "longitude": -58.381607
+        },
+        {
+            "name": "EWA",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "au",
+            "country": "Australia",
+            "centered": "AUS",
+            "capital": "Canberra",
+            "latitude": -35.271059,
+            "longitude": 149.128166
+        },
+        {
+            "name": "EWO",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "at",
+            "country": "Austria",
+            "centered": "AUT",
+            "capital": "Wien",
+            "latitude": 48.263997,
+            "longitude": 16.366122
+        },
+        {
+            "name": "EWK",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "be",
+            "country": "Belgium",
+            "centered": "BEL",
+            "capital": "Brussels",
+            "latitude": 50.900222, 
+            "longitude": 4.353237
+        },
+        {
+            "name": "EWZ",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "br",
+            "country": "Brazil",
+            "centered": "BRA",
+            "capital": "Brasilia",
+            "latitude": -15.797428, 
+            "longitude": -47.899588
         },
         {
             "name": "VTI",
@@ -16,7 +61,7 @@
             "iso": "us",
             "country": "USA",
             "centered": "USA",
-            "fillKey": "USA"
+            "fillKey": "blue"
         }
     ]
 }
