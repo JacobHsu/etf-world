@@ -12,9 +12,8 @@
     >
      <!-- labels -->
       <div slot="hoverBubbleInfo" class="hoverinfo" style="text-align:center;">
-        <b>Name</b>: {{ popupData.name }}<br />
-        <b>Yield</b>: {{ popupData.yeild }}<br />
-        Exploded on {{ popupData.date }} by the {{ popupData.country }}
+        <span :class="`flag-icon flag-icon-${popupData.iso}`" aria-label="Flag"></span> 
+        <b> {{ popupData.name }}</b>
       </div>
     </vue-datamaps>
     <!-- <vue-datamaps/> -->
@@ -32,16 +31,17 @@ export default {
   data() {
     return {
       labelsConfig: {
-        fontSize: 14,
-        fontFamily: 'Verdana',
-        labelColor: '#fff',
-        lineWidth: 1,
+        // fontSize: 14,
+        // fontFamily: 'Verdana',
+        // labelColor: '#fff',
+        // lineWidth: 1,
       },
       geographyConfig: {
         borderColor: '#DEDEDE',
-        borderWidth: 1,
-        highlightBorderWidth: 2,
-        highlightBorderOpacity: 1,
+        borderWidth: 2,
+        highlightFillColor: '#1C977A',
+        popupOnHover: false,
+        highlightOnHover: false,
         dataUrl:'world.json',
       },
       data: {
@@ -49,6 +49,7 @@ export default {
       },
       fills: {
         defaultFill: '#ABDDA4',
+        authorHasTraveledTo: "#fa0fa0",
         USA: 'blue',
         RUS: 'red',
         active: 'rgb(113, 142, 179)'
@@ -59,7 +60,7 @@ export default {
       },
       popupData: {
         name: '',
-        yeild: '',
+        iso: '',
         date: '',
         country: '',
       },
@@ -75,7 +76,7 @@ export default {
     popupTemplate({ datum }) {
       this.popupData = {
         name: datum.name,
-        yeild: datum.yeild,
+        iso: datum.iso,
         date: datum.date,
         country: datum.country,
       }
@@ -92,4 +93,7 @@ export default {
   position: relative;
   /* border:1px dotted blue;  */
 }
+/* .datamaps-subunit:hover {
+  stroke-width: 2px;
+} */
 </style>

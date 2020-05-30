@@ -1,13 +1,21 @@
 {
     "data": [
         {
+            "name": "ARGT",
+            "radius": 5,
+            "iso": "ar",
+            "country": "ARG",
+            "centered": "ARG",
+            "fillKey": "USA",
+            "latitude": -34.601609,
+            "longitude": -58.381607
+        },
+        {
             "name": "VTI",
             "radius": 5,
-            "yeild": 0,
+            "iso": "us",
             "country": "USA",
             "centered": "USA",
-            "date": "1986-06-05",
-            "significance": "Centered on US",
             "fillKey": "USA"
         }
     ]
