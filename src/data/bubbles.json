@@ -8,6 +8,7 @@
             "country": "ARG",
             "centered": "ARG",
             "capital": "Buenos Aires",
+            "national": "布宜諾斯艾利斯",
             "latitude": -34.601609,
             "longitude": -58.381607
         },
@@ -19,6 +20,7 @@
             "country": "Australia",
             "centered": "AUS",
             "capital": "Canberra",
+            "national": "坎培拉",
             "latitude": -35.271059,
             "longitude": 149.128166
         },
@@ -30,6 +32,7 @@
             "country": "Austria",
             "centered": "AUT",
             "capital": "Wien",
+            "national": "維也納",
             "latitude": 48.263997,
             "longitude": 16.366122
         },
@@ -41,6 +44,7 @@
             "country": "Belgium",
             "centered": "BEL",
             "capital": "Brussels",
+            "national": "布魯塞爾",
             "latitude": 50.900222, 
             "longitude": 4.353237
         },
@@ -52,8 +56,45 @@
             "country": "Brazil",
             "centered": "BRA",
             "capital": "Brasilia",
+            "national": "巴西利亞",
             "latitude": -15.797428, 
             "longitude": -47.899588
+        },
+        {
+            "name": "EWC",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "ca",
+            "country": "Canada",
+            "centered": "CAN",
+            "capital": "Ottawa",
+            "national": "渥太華",
+            "latitude": 45.422122, 
+            "longitude": -75.696055
+        },
+        {
+            "name": "ECH",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "cl",
+            "country": "Chile",
+            "centered": "CHL",
+            "capital": "Santiago",
+            "national": "聖地亞哥",
+            "latitude": -33.326140, 
+            "longitude": -70.658542
+        },
+        {
+            "name": "MCHI",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "cn",
+            "country": "China",
+            "centered": "CHN",
+            "capital": "Beijing",
+            "national": "北京",
+            "latitude": 39.995481, 
+            "longitude": 116.466009
         },
         {
             "name": "VTI",

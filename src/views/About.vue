@@ -39,7 +39,7 @@ export default {
       }
     },
     fillData (res) {
-      this.datacollection = res.data.data
+      this.datacollection = res.data.etf
       this.options = {
         responsive: true,
         maintainAspectRatio: false,
