@@ -39,7 +39,7 @@
 <script>
 import LineExample from '@/components/LineExample'
 import axios from 'axios'
-// datacollection[etf.etf].price, datacollection[etf.etf].todayUpOrDownVal
+
 export default {
   name: "EtfTable",
   components: {
@@ -60,8 +60,8 @@ export default {
   },
   methods: {
     chartData(datacollection, etf) {
-      const data = !datacollection[etf] ? [] : datacollection[etf].price
-      const upOrDown = !datacollection[etf] ? 0 : datacollection[etf].todayUpOrDownVal
+      const data = !datacollection[etf] ? [] : datacollection[etf].periodPrice
+      const upOrDown = !datacollection[etf] ? 0 : datacollection[etf].periodChg
       let borderColor = '#ABDDA4'
       borderColor =  upOrDown < 0 ? '#FF6666' : '#ABDDA4'
       return {

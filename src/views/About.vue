@@ -2,8 +2,8 @@
   <div class="about">
     <h1>This is an about page</h1>
     <div class="Chart" >
-      <line-example :chart-data="chartData(datacollection.VT)" :options="options" :width="100" :height="50" />
-      <line-example :chart-data="chartData(datacollection.VWO)" :options="options" :width="100" :height="50" />
+      <!-- <line-example :chart-data="chartData(datacollection, 'VT')" :options="options" :width="100" :height="50" /> -->
+      <line-example :chart-data="chartData(datacollection, 'VT')" :options="options" :width="200" :height="100" />
     </div>
   </div>
 </template>
@@ -26,14 +26,15 @@ export default {
     this.getData()
   },
   methods: {
-    chartData(etf) {
+    chartData(datacollection, etf) {
+      const data = !datacollection[etf] ? [] : datacollection[etf].periodPrice
       return {
-        labels: ['', '', '', '', '', '', ''],
+        labels: datacollection.period, //['', '', '', '', '', '', ''],
         datasets: [
           {
             label: '',
             backgroundColor: '#fff',
-            data: etf,
+            data: data,
           },
         ],
       }
@@ -47,16 +48,16 @@ export default {
           display: false
         },
         scales: {
-          xAxes: [
-            {
-              display: false, //this will remove all the x-axis grid lines
-            },
-          ],
-          yAxes: [
-            {
-              display: false, //this will remove all the y-axis grid lines
-            },
-          ]
+          // xAxes: [
+          //   {
+          //     display: false, //this will remove all the x-axis grid lines
+          //   },
+          // ],
+          // yAxes: [
+          //   {
+          //     display: false, //this will remove all the y-axis grid lines
+          //   },
+          // ]
         },
         tooltips: {
           displayColors: false
@@ -64,7 +65,7 @@ export default {
       }
     },
     getData() {
-      const api = process.env.NODE_ENV === 'production' ? 'https://node-etfs-api.herokuapp.com/api/etfs' : 'https://node-etfs-api.herokuapp.com/api/etfs';
+      const api = process.env.NODE_ENV === 'production' ? 'https://node-etfs-api.herokuapp.com/api/etfs' : 'http://localhost:8000/api/etfs';
       axios.get(api).then(this.fillData)
     }
   }
