@@ -64,6 +64,7 @@ export default {
       const upOrDown = !datacollection[etf] ? 0 : datacollection[etf].periodChg
       let borderColor = '#ABDDA4'
       borderColor =  upOrDown < 0 ? '#FF6666' : '#ABDDA4'
+      console.log(etf, upOrDown)
       return {
         labels: ['', '', '', '', '', '', ''],
         datasets: [
@@ -103,7 +104,8 @@ export default {
       }
     },
     getData() {
-      const api = process.env.NODE_ENV === 'production' ? 'https://node-etfs-api.herokuapp.com/api/etfs' : 'http://localhost:8000/api/etfs';
+      const api = 'https://node-etfs-api.herokuapp.com/api/etfs'
+      //const api = process.env.NODE_ENV === 'production' ? 'https://node-etfs-api.herokuapp.com/api/etfs' : 'http://localhost:8000/api/etfs';
       axios.get(api).then(this.fillData)
     }
   }

@@ -97,6 +97,42 @@
             "longitude": 116.466009
         },
         {
+            "name": "ICOL",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "co",
+            "country": "Colombia",
+            "centered": "COL",
+            "capital": "Bogotá",
+            "national": "波哥大",
+            "latitude": 5.403364, 
+            "longitude": -74.075361
+        },
+        {
+            "name": "EDEN",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "dk",
+            "country": "Denmark",
+            "centered": "DNK",
+            "capital": "København",
+            "national": "哥本哈根",
+            "latitude": 57.682992, 
+            "longitude": 12.576075
+        },
+        {
+            "name": "EGPT",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "eg",
+            "country": "Denmark",
+            "centered": "Egypt",
+            "capital": "Cairo",
+            "national": "開羅",
+            "latitude": 30.047894, 
+            "longitude": 31.235890
+        },
+        {
             "name": "VTI",
             "radius": 5,
             "iso": "us",
