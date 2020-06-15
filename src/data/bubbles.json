@@ -133,6 +133,30 @@
             "longitude": 31.235890
         },
         {
+            "name": "EFNL",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "fi",
+            "country": "Finland",
+            "centered": "FIN",
+            "capital": "Helsinki",
+            "national": "赫爾辛基",
+            "latitude": 60.183013, 
+            "longitude": 24.931456
+        },
+        {
+            "name": "EWQ",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "fr",
+            "country": "France",
+            "centered": "FRA",
+            "capital": "Paris",
+            "national": "巴黎",
+            "latitude": 48.860125, 
+            "longitude": 2.294994
+        },
+        {
             "name": "VTI",
             "radius": 5,
             "iso": "us",

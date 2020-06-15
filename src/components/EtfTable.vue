@@ -27,7 +27,7 @@
               :href="'https://www.moneydj.com/ETF/X/Basic/Basic0007.xdjhtm?etfid='+etf.etf"
             >{{etf.etf}}</a>
           </td>
-          <td v-show="datacollection">
+          <td v-show="datacollection" v-on:click="lineClick(etf.etf)">
               <line-example :chart-data="chartData(datacollection, etf.etf)" :options="options" :width="100" :height="34"  />
           </td>
         </tr>
@@ -59,6 +59,10 @@ export default {
     this.getData()
   },
   methods: {
+    lineClick(etf) {
+      let searchHref = 'https://www.google.com/search?q='+etf
+      window.open(searchHref, '_blank');
+    },
     chartData(datacollection, etf) {
       const data = !datacollection[etf] ? [] : datacollection[etf].periodPrice
       const upOrDown = !datacollection[etf] ? 0 : datacollection[etf].periodChg
@@ -104,8 +108,8 @@ export default {
       }
     },
     getData() {
-      const api = 'https://node-etfs-api.herokuapp.com/api/etfs'
-      //const api = process.env.NODE_ENV === 'production' ? 'https://node-etfs-api.herokuapp.com/api/etfs' : 'http://localhost:8000/api/etfs';
+      //const api = 'https://node-etfs-api.herokuapp.com/api/etfs'
+      const api = process.env.NODE_ENV === 'production' ? 'https://node-etfs-api.herokuapp.com/api/etfs' : 'http://localhost:8000/api/etfs';
       axios.get(api).then(this.fillData)
     }
   }
