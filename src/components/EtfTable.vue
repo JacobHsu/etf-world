@@ -60,7 +60,7 @@ export default {
   },
   methods: {
     lineClick(etf) {
-      let searchHref = 'https://www.google.com/search?q='+etf
+      let searchHref = 'https://www.google.com/search?q='+etf+ ' stock'
       window.open(searchHref, '_blank');
     },
     chartData(datacollection, etf) {

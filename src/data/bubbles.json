@@ -157,6 +157,30 @@
             "longitude": 2.294994
         },
         {
+            "name": "EWG",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "de",
+            "country": "Germany",
+            "centered": "DEU",
+            "capital": "Berlin",
+            "national": "柏林",
+            "latitude": 52.550625, 
+            "longitude": 13.372460
+        },
+        {
+            "name": "GREK",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "gr",
+            "country": "Greece",
+            "centered": "GRC",
+            "capital": "Athína",
+            "national": "雅典",
+            "latitude": 36.971633, 
+            "longitude": 23.725739
+        },
+        {
             "name": "VTI",
             "radius": 5,
             "iso": "us",
