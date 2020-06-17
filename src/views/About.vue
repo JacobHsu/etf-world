@@ -1,9 +1,9 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
-    <div class="Chart" >
+    <h1>ETFs</h1>
+    <div class="Chart" v-for="etf in etfs" :key="etf.id">
       <!-- <line-example :chart-data="chartData(datacollection, 'VT')" :options="options" :width="100" :height="50" /> -->
-      <line-example :chart-data="chartData(datacollection, 'VT')" :options="options" :width="200" :height="100" />
+      {{etf}} <line-example :chart-data="chartData(datacollection, etf)" :options="options" :width="200" :height="100" />
     </div>
   </div>
 </template>
@@ -18,6 +18,7 @@ export default {
   },
   data() {
     return {
+      etfs: ['VT','VTI','EWJ','EWU','MCHI','EWL'],
       datacollection: {},
       options: {}
     }
@@ -33,7 +34,7 @@ export default {
         datasets: [
           {
             label: '',
-            backgroundColor: '#fff',
+            backgroundColor: 'darkseagreen',
             data: data,
           },
         ],

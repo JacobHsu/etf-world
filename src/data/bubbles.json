@@ -181,6 +181,30 @@
             "longitude": 23.725739
         },
         {
+            "name": "EWH",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "hk",
+            "country": "Hong Kong",
+            "centered": "HKG",
+            "capital": "Victoria City",
+            "national": "維多利亞城",
+            "latitude": 22.281385, 
+            "longitude": 114.170153
+        },
+        {
+            "name": "INDA",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "in",
+            "country": "India",
+            "centered": "IND",
+            "capital": "New Delhi",
+            "national": "新德里",
+            "latitude": 28.617906,
+            "longitude":  77.200548
+        },
+        {
             "name": "VTI",
             "radius": 5,
             "iso": "us",
