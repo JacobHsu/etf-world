@@ -202,7 +202,31 @@
             "capital": "New Delhi",
             "national": "新德里",
             "latitude": 28.617906,
-            "longitude":  77.200548
+            "longitude": 77.200548
+        },
+        {
+            "name": "EIDO",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "id",
+            "country": "Indonesia",
+            "centered": "IDN",
+            "capital": "Jakarta",
+            "national": "雅加達",
+            "latitude": -6.188926, 
+            "longitude": 106.842022
+        },
+        {
+            "name": "EIRL",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "ie",
+            "country": "Ireland",
+            "centered": "IRL",
+            "capital": "Dublin",
+            "national": "都柏林",
+            "latitude": 51.142264, 
+            "longitude": -8.281536
         },
         {
             "name": "VTI",
