@@ -18,7 +18,7 @@ export default {
   },
   data() {
     return {
-      etfs: ['VT','VTI','EWJ','EWU','MCHI','EWL','EWC','EWQ','EWG','EWA','EWT','EWY','EWN','INDA','EWD','EWH'],
+      etfs: ['VT','VTI','EWJ','EWU','MCHI','EWL','EWC','EWQ','EWG','EWA','EWT','EWY','EWN','INDA','EWD','EWH','EWI','EWP','EDEN','EWZ','EFNL','RSX','EZA','KSA','EWK','THD','EWM','EWS','EWW','ENOR','EIS','EIDO','EPOL','QAT','TUR','ENZL','PGAL','ECH','EPHE','EWO','EIRL'],
       datacollection: {},
       options: {}
     }

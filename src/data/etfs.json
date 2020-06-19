@@ -37,7 +37,7 @@
         { "id": "POL", "iso": "pl", "country": "Poland", "name":"波蘭", "etf": "EPOL" },
         { "id": "PRT", "iso": "pt", "country": "Portugal", "name":"葡萄牙", "etf": "PGAL" },
         { "id": "QAT", "iso": "qa", "country": "Qatar", "name":"卡達", "etf": "QAT" },
-        { "id": "RUS", "iso": "ru", "country": "Russia", "name":"俄羅斯", "etf": "ERUS" },
+        { "id": "RUS", "iso": "ru", "country": "Russia", "name":"俄羅斯", "etf": "RSX" },
         { "id": "SAU", "iso": "sa", "country": "Saudi Arabia", "name":"沙烏地阿拉伯", "etf": "KSA" },
         { "id": "SGP", "iso": "sg", "country": "Singapore", "name":"新加坡", "etf": "EWS" },
         { "id": "ZAF", "iso": "za", "country": "South Africa", "name":"南非", "etf": "EZA" },

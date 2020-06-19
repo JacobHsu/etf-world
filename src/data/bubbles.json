@@ -229,6 +229,30 @@
             "longitude": -8.281536
         },
         {
+            "name": "EIS",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "il",
+            "country": "Israel",
+            "centered": "ISR",
+            "capital": "Jerusalem",
+            "national": "耶路撒冷",
+            "latitude": 31.804722, 
+            "longitude": 35.109571
+        },
+        {
+            "name": "EWI",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "it",
+            "country": "Italy",
+            "centered": "ITA",
+            "capital": "Roma",
+            "national": "羅馬",
+            "latitude": 40.909731, 
+            "longitude": 12.500947
+        },
+        {
             "name": "VTI",
             "radius": 5,
             "iso": "us",
