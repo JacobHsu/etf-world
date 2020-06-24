@@ -253,6 +253,54 @@
             "longitude": 12.500947
         },
         {
+            "name": "EWJ",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "jp",
+            "country": "Japan",
+            "centered": "JPN",
+            "capital": "Tokyo",
+            "national": "東京",
+            "latitude": 35.681093, 
+            "longitude": 139.767760
+        },
+        {
+            "name": "EWY",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "kr",
+            "country": "Korea",
+            "centered": "KOR",
+            "capital": "Seoul",
+            "national": "首爾",
+            "latitude": 37.762592, 
+            "longitude": 126.977156
+        },
+        {
+            "name": "EWM",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "my",
+            "country": "Malaysia",
+            "centered": "MYS",
+            "capital": "Kuala Lumpur",
+            "national": "吉隆坡",
+            "latitude": 3.164557, 
+            "longitude": 101.709646
+        },
+        {
+            "name": "EWW",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "mx",
+            "country": "Mexico",
+            "centered": "MEX",
+            "capital": "Ciudad de México",
+            "national": "墨西哥城",
+            "latitude": 19.547301, 
+            "longitude": -99.130546
+        },
+        {
             "name": "VTI",
             "radius": 5,
             "iso": "us",
