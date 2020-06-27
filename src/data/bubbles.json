@@ -301,6 +301,54 @@
             "longitude": -99.130546
         },
         {
+            "name": "EWN",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "nl",
+            "country": "Netherlands",
+            "centered": "NLD",
+            "capital": "Amsterdam",
+            "national": "阿姆斯特丹",
+            "latitude": 52.390292, 
+            "longitude": 4.887279
+        },
+        {
+            "name": "ENZL",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "nz",
+            "country": "New Zealand",
+            "centered": "NZL",
+            "capital": "Wellington",
+            "national": "威靈頓",
+            "latitude": -40.232326, 
+            "longitude": 174.793795
+        },
+        {
+            "name": "NGE",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "ng",
+            "country": "Nigeria",
+            "centered": "NGA",
+            "capital": "Abuja",
+            "national": "阿布賈",
+            "latitude": 9.143512, 
+            "longitude": 5.390403
+        },
+        {
+            "name": "ENOR",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "no",
+            "country": "Norway",
+            "centered": "NOR",
+            "capital": "Oslo",
+            "national": "奧斯陸",
+            "latitude": 59.919836, 
+            "longitude": 10.732765
+        },
+        {
             "name": "VTI",
             "radius": 5,
             "iso": "us",
