@@ -349,6 +349,42 @@
             "longitude": 10.732765
         },
         {
+            "name": "PAK",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "pk",
+            "country": "Pakistan",
+            "centered": "PAK",
+            "capital": "Islamabad",
+            "national": "伊斯蘭馬巴德",
+            "latitude": 33.716134, 
+            "longitude": 73.062057
+        },
+        {
+            "name": "EPU",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "pe",
+            "country": "Peru",
+            "centered": "PER",
+            "capital": "Lima",
+            "national": "利馬",
+            "latitude": -11.947578, 
+            "longitude": -77.002958
+        },
+        {
+            "name": "EPHE",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "ph",
+            "country": "Philippines",
+            "centered": "PHL",
+            "capital": "Maynila",
+            "national": "馬尼拉",
+            "latitude": 14.541052, 
+            "longitude": 121.008312
+        },
+        {
             "name": "VTI",
             "radius": 5,
             "iso": "us",
