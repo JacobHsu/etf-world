@@ -385,6 +385,42 @@
             "longitude": 121.008312
         },
         {
+            "name": "EPOL",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "pl",
+            "country": "Poland",
+            "centered": "POL",
+            "capital": "Warszawa",
+            "national": "華沙",
+            "latitude": 53.337768, 
+            "longitude": 21.077707
+        },
+        {
+            "name": "PGAL",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "pt",
+            "country": "Portugal",
+            "centered": "PRT",
+            "capital": "Lisboa",
+            "national": "里斯本",
+            "latitude": 41.171820, 
+            "longitude": -9.179679
+        },
+        {
+            "name": "QAT",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "qa",
+            "country": "Qatar",
+            "centered": "QAT",
+            "capital": "Doha",
+            "national": "多哈",
+            "latitude": 26.669771, 
+            "longitude": 51.523683
+        },
+        {
             "name": "VTI",
             "radius": 5,
             "iso": "us",
