@@ -421,6 +421,42 @@
             "longitude": 51.523683
         },
         {
+            "name": "RSX",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "ru",
+            "country": "Russia",
+            "centered": "RUS",
+            "capital": "Moscow",
+            "national": "莫斯科",
+            "latitude": 55.785800, 
+            "longitude": 37.595793
+        },
+        {
+            "name": "KSA",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "sa",
+            "country": "Saudi Arabia",
+            "centered": "SAU",
+            "capital": "Riyadh",
+            "national": "利雅德",
+            "latitude": 25.947473, 
+            "longitude": 46.766247
+        },
+        {
+            "name": "EWS",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "sg",
+            "country": "Singapore",
+            "centered": "SGP",
+            "capital": "Singapore City",
+            "national": "新加坡市",
+            "latitude": 1.409439, 
+            "longitude": 103.788340
+        },
+        {
             "name": "VTI",
             "radius": 5,
             "iso": "us",
