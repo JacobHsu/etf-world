@@ -457,6 +457,30 @@
             "longitude": 103.788340
         },
         {
+            "name": "EZA",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "za",
+            "country": "South Africa",
+            "centered": "ZAF",
+            "capital": "Pretoria",
+            "national": "普勒托利亞",
+            "latitude": -25.674394, 
+            "longitude": 28.225215
+        },
+        {
+            "name": "EWP",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "es",
+            "country": "Spain",
+            "centered": "ESP",
+            "capital": "Madrid",
+            "national": "馬德里",
+            "latitude": 41.849470, 
+            "longitude": -3.708314
+        },
+        {
             "name": "VTI",
             "radius": 5,
             "iso": "us",
