@@ -481,6 +481,42 @@
             "longitude": -3.708314
         },
         {
+            "name": "EWD",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "se",
+            "country": "Sweden",
+            "centered": "SWE",
+            "capital": "Stockholm",
+            "national": "斯德哥爾摩",
+            "latitude": 59.349653, 
+            "longitude": 18.074042
+        },
+        {
+            "name": "EWL",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "ch",
+            "country": "Switzerland",
+            "centered": "CHE",
+            "capital": "Bern",
+            "national": "伯恩",
+            "latitude": 47.948084, 
+            "longitude": 7.447802
+        },
+        {
+            "name": "EWT",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "tw",
+            "country": "Taiwan",
+            "centered": "TWN",
+            "capital": "Taipei",
+            "national": "台北",
+            "latitude": 25.040248, 
+            "longitude": 121.512051
+        },
+        {
             "name": "VTI",
             "radius": 5,
             "iso": "us",
