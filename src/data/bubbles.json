@@ -517,6 +517,30 @@
             "longitude": 121.512051
         },
         {
+            "name": "THD",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "th",
+            "country": "Thailand",
+            "centered": "THA",
+            "capital": "Bangkok",
+            "national": "曼谷",
+            "latitude": 12.751857, 
+            "longitude": 100.492702
+        },
+        {
+            "name": "TUR",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "tr",
+            "country": "Turkey",
+            "centered": "TUR",
+            "capital": "Ankara",
+            "national": "安卡拉",
+            "latitude": 39.954221, 
+            "longitude": 32.860108
+        },
+        {
             "name": "VTI",
             "radius": 5,
             "iso": "us",
