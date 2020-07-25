@@ -541,6 +541,30 @@
             "longitude": 32.860108
         },
         {
+            "name": "UAE",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "ae",
+            "country": "United Arab Emirates",
+            "centered": "ARE",
+            "capital": "Abu Dhabi",
+            "national": "阿布扎比",
+            "latitude": 25.205160, 
+            "longitude": 54.411565
+        },
+        {
+            "name": "EWU",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "gb",
+            "country": "United Kingdom",
+            "centered": "GBR",
+            "capital": "London",
+            "national": "倫敦",
+            "latitude": 51.550784, 
+            "longitude": -0.159776
+        },
+        {
             "name": "VTI",
             "radius": 5,
             "iso": "us",
