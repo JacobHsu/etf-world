@@ -565,6 +565,30 @@
             "longitude": -0.159776
         },
         {
+            "name": "VOO",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "us",
+            "country": "United States",
+            "centered": "USA",
+            "capital": "Washington, D.C.",
+            "national": "華盛頓",
+            "latitude": 38.898738, 
+            "longitude": -77.036734
+        },
+        {
+            "name": "VNM",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "vn",
+            "country": "Viet Nam",
+            "centered": "VNM",
+            "capital": "Hà Nội",
+            "national": "河內",
+            "latitude": 21.028413, 
+            "longitude": 105.835557
+        },
+        {
             "name": "VTI",
             "radius": 5,
             "iso": "us",
