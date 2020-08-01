@@ -29,6 +29,7 @@ export default {
   methods: {
     chartData(datacollection, etf) {
       const data = !datacollection[etf] ? [] : datacollection[etf].periodPrice
+      console.log(etf, data)
       return {
         labels: datacollection.period, //['', '', '', '', '', '', ''],
         datasets: [

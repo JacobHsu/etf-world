@@ -28,7 +28,7 @@
             >{{etf.etf}}</a>
           </td>
           <td v-show="datacollection" v-on:click="lineClick(etf.etf)">
-              <line-example :chart-data="chartData(datacollection, etf.etf)" :options="options" :width="100" :height="34"  />
+              <line-example :chart-data="chartData(datacollection, etf.etf)" :options="options" :width="130" :height="34"  />
           </td>
         </tr>
       </tbody>
@@ -68,9 +68,9 @@ export default {
       const upOrDown = !datacollection[etf] ? 0 : datacollection[etf].periodChg
       let borderColor = '#ABDDA4'
       borderColor =  upOrDown < 0 ? '#FF6666' : '#ABDDA4'
-      console.log(etf, upOrDown)
+      // console.log(etf, upOrDown, data)
       return {
-        labels: ['', '', '', '', '', '', ''],
+        labels: ['', '', '', '', '', '', '', '', '', '', ''],
         datasets: [
           {
             label: '',
