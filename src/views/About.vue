@@ -29,13 +29,16 @@ export default {
   methods: {
     chartData(datacollection, etf) {
       const data = !datacollection[etf] ? [] : datacollection[etf].periodPrice
+      const upOrDown = !datacollection[etf] ? 0 : datacollection[etf].periodChg
+      let borderColor = 'darkseagreen'
+      borderColor =  upOrDown < 0 ? 'IndianRed' : 'darkseagreen'
       console.log(etf, data)
       return {
         labels: datacollection.period, //['', '', '', '', '', '', ''],
         datasets: [
           {
             label: '',
-            backgroundColor: 'darkseagreen',
+            backgroundColor: borderColor,
             data: data,
           },
         ],
