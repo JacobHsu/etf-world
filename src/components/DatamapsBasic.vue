@@ -21,6 +21,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 import bubblesData from '../data/bubbles.json'
 import { VueDatamaps } from 'vue-datamaps'
 
@@ -51,6 +52,7 @@ export default {
         defaultFill: '#ABDDA4',
         authorHasTraveledTo: "#fa0fa0",
         blue: 'blue',
+        red: 'LightCoral',
         RUS: 'red',
         active: 'rgb(113, 142, 179)'
       },
@@ -67,7 +69,9 @@ export default {
     }
   },
   created() {
-
+  },
+  mounted() {
+    this.getData()
   },
   updated() {
 
@@ -81,6 +85,20 @@ export default {
         country: datum.country,
       }
     },
+    etfsData(res) {
+      const {ARGT, EWA, EWO} = res.data.etf
+      const etfs = {ARG:ARGT.periodChg, AUS:EWA.periodChg, AUT:EWO.periodChg}
+      console.log( etfs) 
+
+      for (const [key, value] of Object.entries(etfs)) {
+         this.data[key] = value < 0 ? { fillKey: 'red' } : { fillKey: 'defaultFill' }
+      }
+     
+    },
+    getData() {
+      const api = process.env.NODE_ENV === 'production' ? 'https://node-etfs-api.herokuapp.com/api/etfs' : 'http://localhost:8000/api/etfs';
+      axios.get(api).then(this.etfsData)
+    }
   },
 }
 </script>

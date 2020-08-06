@@ -1,10 +1,10 @@
 <template>
   <div class="hello">
     <!-- <h1>{{ msg }}</h1> -->
-    <div class="pure-u-1 pure-u-lg-1-3 pure-u-xl-1-5" style="max-width: 560px;">
+    <div class="pure-u-1 pure-u-lg-1-3 pure-u-xl-1-5" style="max-width: 580px;">
         <etf-table :etfs="table1"/>
     </div>
-    <div class="pure-u-1 pure-u-lg-1-3 pure-u-xl-1-5" style="max-width: 700px;">
+    <div class="pure-u-1 pure-u-lg-1-3 pure-u-xl-1-5" style="max-width: 690px;">
         <etf-table :etfs="table2"/>
     </div>
 
