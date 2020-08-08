@@ -10,10 +10,10 @@
       bubbles
       labels
     >
-     <!-- labels -->
+      <!-- labels -->
       <div slot="hoverBubbleInfo" class="hoverinfo" style="text-align:center;">
-        <span :class="`flag-icon flag-icon-${popupData.iso}`" aria-label="Flag"></span> 
-        <b> {{ popupData.name }}</b>
+        <span :class="`flag-icon flag-icon-${popupData.iso}`" aria-label="Flag"></span>
+        <b>{{ popupData.name }}</b>
       </div>
     </vue-datamaps>
     <!-- <vue-datamaps/> -->
@@ -86,8 +86,12 @@ export default {
       }
     },
     etfsData(res) {
-      const {ARGT, EWA, EWO} = res.data.etf
-      const etfs = {ARG:ARGT.periodChg, AUS:EWA.periodChg, AUT:EWO.periodChg}
+      const {ARGT, EWA, EWO, EWK, EWZ, EWC, ECH, MCHI, ICOL } = res.data.etf
+      const etfs = {
+        ARG:ARGT.periodChg, AUS:EWA.periodChg, AUT:EWO.periodChg, 
+        BEL:EWK.periodChg, BRA:EWZ.periodChg, CAN:EWC.periodChg,
+        CHL:ECH.periodChg, CHN:MCHI.periodChg, COL:ICOL.periodChg
+      }
       console.log( etfs) 
 
       for (const [key, value] of Object.entries(etfs)) {
