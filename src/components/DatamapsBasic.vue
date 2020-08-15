@@ -87,7 +87,7 @@ export default {
     },
     etfsData(res) {
       const {ARGT, EWA, EWO, EWK, EWZ, EWC, ECH, MCHI, ICOL, EDEN, EGPT, EFNL, EWQ, EWG, GREK, EWH, INDA, EIDO,
-      EIRL, EIS, EWI, EWJ, EWY, EWM, EWW, EWN, ENZL, NGE, ENOR, PAK} = res.data.etf
+      EIRL, EIS, EWI, EWJ, EWY, EWM, EWW, EWN, ENZL, NGE, ENOR, PAK, EPU, EPHE, EPOL, PGAL, QAT, RSX} = res.data.etf
       const etfs = {
         ARG:ARGT.periodChg, AUS:EWA.periodChg, AUT:EWO.periodChg, 
         BEL:EWK.periodChg, BRA:EWZ.periodChg, CAN:EWC.periodChg,
@@ -98,7 +98,9 @@ export default {
         IRL:EIRL.periodChg, ISR:EIS.periodChg, ITA:EWI.periodChg,
         JPN:EWJ.periodChg, KOR:EWY.periodChg, MYS:EWM.periodChg,
         MEX:EWW.periodChg, NLD:EWN.periodChg, NZL:ENZL.periodChg,
-        NGA:NGE.periodChg, NOR:ENOR.periodChg, PAK:PAK.periodChg
+        NGA:NGE.periodChg, NOR:ENOR.periodChg, PAK:PAK.periodChg,
+        PER:EPU.periodChg, PHL:EPHE.periodChg, POL:EPOL.periodChg,
+        PRT:PGAL.periodChg, QAT:QAT.periodChg, RUS:RSX.periodChg
       }
       console.log(etfs) 
 
