@@ -41,10 +41,14 @@ var historical = function (symbol, from, to, callback) {
         return unwrap(obj)
       })
 
+      const setDataSeries = quotesMap.map((obj) => {
+        return { time: moment(obj.date).format('yyyy-MM-DD'), value: obj.close}
+      })
 
       const arrDate = quotesMap.map((obj) =>
         moment(obj.date).format('yyyy-MM-DD')
       )
+
       retObj['period'] = _.reverse(arrDate)
 
       const arrClose = quotesMap.map((obj) => obj.close.toFixed(2))
@@ -54,7 +58,9 @@ var historical = function (symbol, from, to, callback) {
       etf['periodChg'] = periodChg
       etf['countryCode'] = etfIdObj[symbol]
       etf['eachDay'] = _.zipObject(retObj['period'], arrClose);
+      etf['setData'] = setDataSeries
       
+      // console.log(etf['setData'])
      
       retObj[symbol] = etf;
       

@@ -1,56 +1,110 @@
 <template>
   <div class="about">
     <h1>ETFs</h1>
+    <lightweight :data="lightweightData"/>
     <div class="Chart" v-for="etf in etfs" :key="etf.id">
       <!-- <line-example :chart-data="chartData(datacollection, 'VT')" :options="options" :width="100" :height="50" /> -->
-      {{etf}} <line-example :chart-data="chartData(datacollection, etf)" :options="options" :width="200" :height="100" />
+      {{etf}}
+      <line-example
+        :chart-data="chartData(datacollection, etf)"
+        :options="options"
+        :width="200"
+        :height="100"
+      />
     </div>
   </div>
 </template>
 <script>
-import LineExample from '@/components/LineExample'
-import axios from 'axios'
+import LineExample from "@/components/LineExample";
+import lightweight from "@/components/lightweight";
+import axios from "axios";
 
 export default {
-  name: 'About',
+  name: "About",
   components: {
     LineExample,
+    lightweight,
   },
   data() {
     return {
-      etfs: ['VT','VTI','EWJ','EWU','MCHI','EWL','EWC','EWQ','EWG','EWA','EWT','EWY','EWN','INDA','EWD','EWH','EWI','EWP','EDEN','EWZ','EFNL','RSX','EZA','KSA','EWK','THD','EWM','EWS','EWW','ENOR','EIS','EIDO','EPOL','QAT','TUR','ENZL','PGAL','ECH','EPHE','EWO','EIRL'],
+      etfs: [
+        "VT",
+        "VTI",
+        "EWJ",
+        "EWU",
+        "MCHI",
+        "EWL",
+        "EWC",
+        "EWQ",
+        "EWG",
+        "EWA",
+        "EWT",
+        "EWY",
+        "EWN",
+        "INDA",
+        "EWD",
+        "EWH",
+        "EWI",
+        "EWP",
+        "EDEN",
+        "EWZ",
+        "EFNL",
+        "RSX",
+        "EZA",
+        "KSA",
+        "EWK",
+        "THD",
+        "EWM",
+        "EWS",
+        "EWW",
+        "ENOR",
+        "EIS",
+        "EIDO",
+        "EPOL",
+        "QAT",
+        "TUR",
+        "ENZL",
+        "PGAL",
+        "ECH",
+        "EPHE",
+        "EWO",
+        "EIRL",
+      ],
       datacollection: {},
-      options: {}
-    }
+      options: {},
+      lightweightData: {}
+    };
   },
   mounted() {
-    this.getData()
+    this.getData();
   },
   methods: {
     chartData(datacollection, etf) {
-      const data = !datacollection[etf] ? [] : datacollection[etf].periodPrice
-      const upOrDown = !datacollection[etf] ? 0 : datacollection[etf].periodChg
-      let borderColor = 'darkseagreen'
-      borderColor =  upOrDown < 0 ? 'IndianRed' : 'darkseagreen'
-      console.log(etf, data)
+      const data = !datacollection[etf] ? [] : datacollection[etf].periodPrice;
+      const upOrDown = !datacollection[etf] ? 0 : datacollection[etf].periodChg;
+      let borderColor = "darkseagreen";
+      borderColor = upOrDown < 0 ? "IndianRed" : "darkseagreen";
+      // console.log(etf, data);
       return {
         labels: datacollection.period, //['', '', '', '', '', '', ''],
         datasets: [
           {
-            label: '',
+            label: "",
             backgroundColor: borderColor,
             data: data,
           },
         ],
-      }
+      };
     },
-    fillData (res) {
-      this.datacollection = res.data.etf
+    fillData(res) {
+      console.log('VT', res.data.etf.VT)
+      this.lightweightData = res.data.etf.VT.setData;
+      this.datacollection = res.data.etf;
       this.options = {
         responsive: true,
         maintainAspectRatio: false,
         legend: {
-          display: false
+          display: false,
         },
         scales: {
           // xAxes: [
@@ -65,16 +119,19 @@ export default {
           // ]
         },
         tooltips: {
-          displayColors: false
-        }
-      }
+          displayColors: false,
+        },
+      };
     },
     getData() {
-      const api = process.env.NODE_ENV === 'production' ? 'https://node-etfs-api.herokuapp.com/api/etfs' : 'http://localhost:8000/api/etfs';
-      axios.get(api).then(this.fillData)
-    }
-  }
-}
+      const api =
+        process.env.NODE_ENV === "production"
+          ? "https://node-etfs-api.herokuapp.com/api/etfs"
+          : "http://localhost:8000/api/etfs";
+      axios.get(api).then(this.fillData);
+    },
+  },
+};
 </script>
 <style>
 .Chart {
