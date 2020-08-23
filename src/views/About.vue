@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <h1>ETFs</h1>
-    <lightweight :cdata="lightweightData"/>
+    <lightweight v-if="lightweightData" :cdata="lightweightData"/>
     <div class="Chart" v-for="etf in etfs" :key="etf.id">
       <!-- <line-example :chart-data="chartData(datacollection, 'VT')" :options="options" :width="100" :height="50" /> -->
       {{etf}}
@@ -97,7 +97,9 @@ export default {
       };
     },
     fillData(res) {
+      
       this.lightweightData = res.data.etf;
+      console.log('fillData', res.data, this.lightweightData)
       this.datacollection = res.data.etf;
       this.options = {
         responsive: true,

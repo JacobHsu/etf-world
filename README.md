@@ -15,6 +15,11 @@ highmaps_world.html
 [css_colors](https://www.w3schools.com/cssref/css_colors.asp)  
 tradingview [lightweight-charts](https://tw.tradingview.com/lightweight-charts/)
 
+## Note
+
+[解决vue的{__ob__: observer}取值问题](https://blog.csdn.net/zhouzuoluo/article/details/103067637)
+`JSON.parse(JSON.stringify(data))`  
+
 ## Project setup
 
 ```

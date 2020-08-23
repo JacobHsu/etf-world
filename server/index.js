@@ -58,7 +58,7 @@ var historical = function (symbol, from, to, callback) {
       etf['periodChg'] = periodChg
       etf['countryCode'] = etfIdObj[symbol]
       etf['eachDay'] = _.zipObject(retObj['period'], arrClose);
-      etf['setData'] = setDataSeries
+      etf['setData'] = _.reverse(setDataSeries)
       
       // console.log(etf['setData'])
      

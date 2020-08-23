@@ -17,14 +17,13 @@ export default {
   },
   mounted () {
     const setDataArr1 = [
-      { time: "2019-4-11", value: 80.01 },
-      { time: "2019-04-12", value: 96.63 },
-      { time: "2019-04-13", value: 76.64 },
+      { time: "2020-08-14", value: 81.68 },
+      { time: "2020-08-15", value: 81.650002 },
+      { time: "2020-08-16", value: 80.910004 },
  
     ]
-    // var arr = _.values(this.data);
-    //let resdata=JSON.parse(JSON.stringify(this.data));
-    console.log('log', setDataArr1, this.cdata, this.cdata.VT);
+    const chartData = JSON.parse(JSON.stringify( this.cdata ) ); 
+    console.log('log', setDataArr1, chartData, this.cdata);
     const chart = createChart(this.$refs.chartRef, {
       width: 400,
       height: 300,
@@ -65,7 +64,7 @@ export default {
       lineWidth: 2,
       crossHairMarkerVisible: false,
     });
-    areaSeries.setData(setDataArr1);
+    areaSeries.setData(chartData.VT.setData); //chartData.VT.setData
     chart.timeScale().fitContent();
   }
 }
