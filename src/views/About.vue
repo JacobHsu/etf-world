@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <h1>ETFs</h1>
-    <lightweight :data="lightweightData"/>
+    <lightweight :cdata="lightweightData"/>
     <div class="Chart" v-for="etf in etfs" :key="etf.id">
       <!-- <line-example :chart-data="chartData(datacollection, 'VT')" :options="options" :width="100" :height="50" /> -->
       {{etf}}
@@ -18,7 +18,7 @@
 import LineExample from "@/components/LineExample";
 import lightweight from "@/components/lightweight";
 import axios from "axios";
-
+import  _ from 'lodash';
 export default {
   name: "About",
   components: {
@@ -97,8 +97,7 @@ export default {
       };
     },
     fillData(res) {
-      console.log('VT', res.data.etf.VT)
-      this.lightweightData = res.data.etf.VT.setData;
+      this.lightweightData = res.data.etf;
       this.datacollection = res.data.etf;
       this.options = {
         responsive: true,
@@ -123,12 +122,12 @@ export default {
         },
       };
     },
-    getData() {
+    async getData() {
       const api =
         process.env.NODE_ENV === "production"
           ? "https://node-etfs-api.herokuapp.com/api/etfs"
           : "http://localhost:8000/api/etfs";
-      axios.get(api).then(this.fillData);
+      await axios.get(api).then(this.fillData);
     },
   },
 };

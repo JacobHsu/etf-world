@@ -8,27 +8,23 @@ import  _ from 'lodash';
 import { createChart } from "lightweight-charts";
 export default {
   name: 'lightweight',
-  props: ['data'],
+  props: {
+    cdata: Object 
+  },
   data() {
     return {
     }
   },
   mounted () {
-    const setDataArr = [
+    const setDataArr1 = [
       { time: "2019-4-11", value: 80.01 },
       { time: "2019-04-12", value: 96.63 },
       { time: "2019-04-13", value: 76.64 },
-      { time: "2019-04-14", value: 81.89 },
-      { time: "2019-04-15", value: 74.43 },
-      { time: "2019-04-16", value: 80.01 },
-      { time: "2019-04-17", value: 96.63 },
-      { time: "2019-04-18", value: 76.64 },
-      { time: "2019-04-19", value: 81.89 },
-      { time: "2019-04-20", value: 74.43 },
+ 
     ]
-    var arr = _.values(this.data);
-
-    console.log(setDataArr, this.data,1, arr );
+    // var arr = _.values(this.data);
+    //let resdata=JSON.parse(JSON.stringify(this.data));
+    console.log('log', setDataArr1, this.cdata, this.cdata.VT);
     const chart = createChart(this.$refs.chartRef, {
       width: 400,
       height: 300,
@@ -69,7 +65,7 @@ export default {
       lineWidth: 2,
       crossHairMarkerVisible: false,
     });
-    areaSeries.setData(setDataArr);
+    areaSeries.setData(setDataArr1);
     chart.timeScale().fitContent();
   }
 }
