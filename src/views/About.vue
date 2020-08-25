@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <h1>ETFs</h1>
-    <lightweight v-if="lightweightData" :cdata="lightweightData"/>
+    <lightweight v-if="isRes" :cdata="lightweightData"/>
     <div class="Chart" v-for="etf in etfs" :key="etf.id">
       <!-- <line-example :chart-data="chartData(datacollection, 'VT')" :options="options" :width="100" :height="50" /> -->
       {{etf}}
@@ -18,7 +18,7 @@
 import LineExample from "@/components/LineExample";
 import lightweight from "@/components/lightweight";
 import axios from "axios";
-import  _ from 'lodash';
+// import  _ from 'lodash';
 export default {
   name: "About",
   components: {
@@ -72,10 +72,11 @@ export default {
       ],
       datacollection: {},
       options: {},
-      lightweightData: {}
+      lightweightData: {},
+      isRes: false
     };
   },
-  mounted() {
+  created() {
     this.getData();
   },
   methods: {
@@ -97,9 +98,8 @@ export default {
       };
     },
     fillData(res) {
-      
+      this.isRes = res.status === 200 ? true : false
       this.lightweightData = res.data.etf;
-      console.log('fillData', res.data, this.lightweightData)
       this.datacollection = res.data.etf;
       this.options = {
         responsive: true,

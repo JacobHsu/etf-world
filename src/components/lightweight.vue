@@ -4,7 +4,7 @@
   </div>
 </template>
 <script>
-import  _ from 'lodash';
+// import  _ from 'lodash';
 import { createChart } from "lightweight-charts";
 export default {
   name: 'lightweight',
@@ -13,17 +13,12 @@ export default {
   },
   data() {
     return {
+      load: false
     }
   },
   mounted () {
-    const setDataArr1 = [
-      { time: "2020-08-14", value: 81.68 },
-      { time: "2020-08-15", value: 81.650002 },
-      { time: "2020-08-16", value: 80.910004 },
- 
-    ]
+
     const chartData = JSON.parse(JSON.stringify( this.cdata ) ); 
-    console.log('log', setDataArr1, chartData, this.cdata);
     const chart = createChart(this.$refs.chartRef, {
       width: 400,
       height: 300,
