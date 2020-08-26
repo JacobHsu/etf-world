@@ -13,7 +13,7 @@ highmaps_world.html
 [chartjs](https://www.chartjs.org) [Line](https://www.chartjs.org/docs/latest/charts/line.html)  
 [node-etfs-api](https://github.com/JacobHsu/node-etfs-api)  
 [css_colors](https://www.w3schools.com/cssref/css_colors.asp)  
-tradingview [lightweight-charts](https://tw.tradingview.com/lightweight-charts/)
+tradingview [lightweight-charts](https://tw.tradingview.com/lightweight-charts/) [圖例](https://jsfiddle.net/TradingView/dtehqksw/)
 
 ## Note
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div ref="chartRef"></div>
+    <div ref="chartRef">xxx</div>
   </div>
 </template>
 <script>
@@ -17,6 +17,12 @@ export default {
     }
   },
   mounted () {
+
+    this.$refs.chartRef.style.position = 'relative';
+    var firstRow = document.createElement('div');
+    firstRow.innerText = 'VT';
+    firstRow.classList.add('legend');
+    this.$refs.chartRef.appendChild(firstRow);
 
     const chartData = JSON.parse(JSON.stringify( this.cdata ) ); 
     const chart = createChart(this.$refs.chartRef, {
@@ -59,8 +65,22 @@ export default {
       lineWidth: 2,
       crossHairMarkerVisible: false,
     });
-    areaSeries.setData(chartData.VT.setData); //chartData.VT.setData
+    areaSeries.setData(chartData.VT.setData);
     chart.timeScale().fitContent();
   }
 }
 </script>
+
+<style>
+.legend {
+	position: absolute;
+	left: 12px;
+	top: 28px;
+	z-index: 3;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 300;
+  color: white;
+  font-size: 22px; 
+}
+</style>
