@@ -1,7 +1,9 @@
 <template>
   <div class="about">
     <h1>ETFs</h1>
-    <lightweight v-if="isRes" :cdata="lightweightData"/>
+    <div  v-for="etf in vtEtfs" :key="etf.id">
+      <lightweight v-if="isRes" :cdata="etfData(datacollection, etf)"/>
+    </div>
     <div class="Chart" v-for="etf in etfs" :key="etf.id">
       <!-- <line-example :chart-data="chartData(datacollection, 'VT')" :options="options" :width="100" :height="50" /> -->
       {{etf}}
@@ -27,6 +29,7 @@ export default {
   },
   data() {
     return {
+      vtEtfs: ["VT","VTI","EWJ"],
       etfs: [
         "VT",
         "VTI",
@@ -80,6 +83,11 @@ export default {
     this.getData();
   },
   methods: {
+    etfData(lightweightData, etf) {
+      const data = !lightweightData[etf] ? [] : lightweightData[etf];
+      data['name'] = etf
+      return data
+    },
     chartData(datacollection, etf) {
       const data = !datacollection[etf] ? [] : datacollection[etf].periodPrice;
       const upOrDown = !datacollection[etf] ? 0 : datacollection[etf].periodChg;

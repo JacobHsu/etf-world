@@ -1,6 +1,7 @@
 <template>
   <div>
-    <div ref="chartRef">xxx</div>
+    <div ref="chartRef"></div>
+    <p></p>
   </div>
 </template>
 <script>
@@ -17,10 +18,9 @@ export default {
     }
   },
   mounted () {
-
     this.$refs.chartRef.style.position = 'relative';
     var firstRow = document.createElement('div');
-    firstRow.innerText = 'VT';
+    firstRow.innerText = this.cdata.name;
     firstRow.classList.add('legend');
     this.$refs.chartRef.appendChild(firstRow);
 
@@ -65,7 +65,7 @@ export default {
       lineWidth: 2,
       crossHairMarkerVisible: false,
     });
-    areaSeries.setData(chartData.VT.setData);
+    areaSeries.setData(chartData.setData);
     chart.timeScale().fitContent();
   }
 }
