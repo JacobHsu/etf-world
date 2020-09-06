@@ -20,6 +20,10 @@ tradingview [lightweight-charts](https://tw.tradingview.com/lightweight-charts/)
 [解决vue的{__ob__: observer}取值问题](https://blog.csdn.net/zhouzuoluo/article/details/103067637)
 `JSON.parse(JSON.stringify(data))`  
 
+## Tool
+
+[色彩選擇工具](https://developer.mozilla.org/zh-TW/docs/Web/CSS/CSS_Colors/Color_picker_tool) rgba
+
 ## Project setup
 
 ```

@@ -14,7 +14,12 @@ export default {
   },
   data() {
     return {
-      load: false
+      load: false,
+      chartColor: {
+        topColor: "rgba(38, 198, 218, 0.56)",
+        bottomColor: "rgba(38, 198, 218, 0.04)",
+        lineColor: "rgba(38, 198, 218, 1)"
+      }
     }
   },
   mounted () {
@@ -23,6 +28,12 @@ export default {
     firstRow.innerText = this.cdata.name;
     firstRow.classList.add('legend');
     this.$refs.chartRef.appendChild(firstRow);
+
+    if( this.cdata.name === 'EWJ') {
+      this.chartColor.topColor = "rgba(216, 56, 38, 0.56)",
+      this.chartColor.bottomColor = "rgba(216, 56, 38, 0.04)",
+      this.chartColor.lineColor = "rgba(216, 56, 38, 1)"
+    }
 
     const chartData = JSON.parse(JSON.stringify( this.cdata ) ); 
     const chart = createChart(this.$refs.chartRef, {
@@ -59,9 +70,9 @@ export default {
       },
     });
     const areaSeries = chart.addAreaSeries({
-      topColor: "rgba(38, 198, 218, 0.56)",
-      bottomColor: "rgba(38, 198, 218, 0.04)",
-      lineColor: "rgba(38, 198, 218, 1)",
+      topColor: this.chartColor.topColor, //"rgba(38, 198, 218, 0.56)",
+      bottomColor: this.chartColor.bottomColor, // "rgba(38, 198, 218, 0.04)",
+      lineColor: this.chartColor.lineColor, // "rgba(38, 198, 218, 1)",
       lineWidth: 2,
       crossHairMarkerVisible: false,
     });
