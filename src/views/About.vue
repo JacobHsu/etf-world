@@ -29,13 +29,8 @@ export default {
   },
   data() {
     return {
-      vtEtfs: ["VT","VTI","EWJ"],
+      vtEtfs: ["VT","VTI","EWJ","EWU","MCHI"],
       etfs: [
-        "VT",
-        "VTI",
-        "EWJ",
-        "EWU",
-        "MCHI",
         "EWL",
         "EWC",
         "EWQ",

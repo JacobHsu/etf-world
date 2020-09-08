@@ -29,7 +29,8 @@ export default {
     firstRow.classList.add('legend');
     this.$refs.chartRef.appendChild(firstRow);
 
-    if( this.cdata.name === 'EWJ') {
+    const down =  this.cdata.periodChg < 0 ? true : false
+    if( down ) {
       this.chartColor.topColor = "rgba(216, 56, 38, 0.56)",
       this.chartColor.bottomColor = "rgba(216, 56, 38, 0.04)",
       this.chartColor.lineColor = "rgba(216, 56, 38, 1)"
@@ -70,9 +71,9 @@ export default {
       },
     });
     const areaSeries = chart.addAreaSeries({
-      topColor: this.chartColor.topColor, //"rgba(38, 198, 218, 0.56)",
-      bottomColor: this.chartColor.bottomColor, // "rgba(38, 198, 218, 0.04)",
-      lineColor: this.chartColor.lineColor, // "rgba(38, 198, 218, 1)",
+      topColor: this.chartColor.topColor,
+      bottomColor: this.chartColor.bottomColor,
+      lineColor: this.chartColor.lineColor,
       lineWidth: 2,
       crossHairMarkerVisible: false,
     });
