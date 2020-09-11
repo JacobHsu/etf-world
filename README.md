@@ -1,5 +1,7 @@
 # etf-world
 
+`$ yarn start`
+
 [Pure.CSS 快速指南](http://www.vue5.com/purecss/purecss_quick_guide.html)
 
 ```JS
