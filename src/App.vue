@@ -2,6 +2,7 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">World</router-link> |
+      <router-link to="/europe">Europe</router-link> |
       <router-link to="/about">About</router-link>
     </div>
     <router-view/>
