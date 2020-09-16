@@ -12,19 +12,12 @@
       bubbles
       labels
     >
-      <!-- labels -->
-      <div slot="hoverBubbleInfo" class="hoverinfo" style="text-align:center;">
-        <span :class="`flag-icon flag-icon-${popupData.iso}`" aria-label="Flag"></span>
-        <b>{{ popupData.name }}</b>
-      </div>
     </vue-datamaps>
-    <!-- <vue-datamaps/> -->
   </div>
 </template>
 
 <script>
 import axios from 'axios'
-import bubblesData from '../data/bubbles.json'
 import { VueDatamaps } from 'vue-datamaps'
 
 export default {
@@ -37,7 +30,7 @@ export default {
       projection: 'Orthographic',
       projectionConfig: {
         rotation: [-20, -30],
-        scale: 1000
+        scale: 100
       },
       labelsConfig: {
         // fontSize: 14,
@@ -63,17 +56,7 @@ export default {
         red: 'LightCoral',
         RUS: 'red',
         active: 'rgb(113, 142, 179)'
-      },
-      bubblesConfig: {
-        popupTemplate: true,
-        data: bubblesData.data,
-      },
-      popupData: {
-        name: '',
-        iso: '',
-        date: '',
-        country: '',
-      },
+      }
     }
   },
   created() {
@@ -87,19 +70,11 @@ export default {
   methods: {
      setProjection (type) {
       const createProjection = {
-        korea: function (d3, element) {
-          const projection = d3.geoMercator().center([0, 0])
-            .rotate([-128, -36])
-            .scale(element.offsetWidth * 6)
-            .translate([element.offsetWidth / 2, element.offsetHeight / 2])
-          const path = d3.geoPath().projection(projection)
-          return { projection, path }
-        },
         zoom: function (d3, element) {
           var projection = d3.geoEquirectangular()
             .center([33, 44])
-            .rotate([4.8, 0])
-            .scale(element.offsetHeight * 1.3)
+            //.rotate([4.8, 0])
+            .scale(element.offsetHeight * 1)
             .translate([element.offsetWidth / 2, element.offsetHeight / 2])
           var path = d3.geoPath()
             .projection(projection)
