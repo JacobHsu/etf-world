@@ -1,9 +1,14 @@
 <template>
   <div class="about">
     <h1>ETFs</h1>
-    <div  v-for="etf in vtEtfs" :key="etf.id">
-      <lightweight v-if="isRes" :cdata="etfData(datacollection, etf)"/>
+    <div v-for="etf in vtEtfs" :key="etf.id">
+      <lightweight v-if="isRes" :cdata="etfData(datacollection, etf)" />
     </div>
+    <back-to-top bottom="50px" right="50px">
+      <button type="button" class="btn btn-info btn-to-top">
+        <i class="fas fa-chevron-up"></i>
+      </button>
+    </back-to-top>
     <div class="Chart" v-for="etf in etfs" :key="etf.id">
       <!-- <line-example :chart-data="chartData(datacollection, 'VT')" :options="options" :width="100" :height="50" /> -->
       {{etf}}
@@ -29,15 +34,54 @@ export default {
   },
   data() {
     return {
-      vtEtfs: ["VT","VTI","EWJ","EWU","MCHI","EWL","EWC","EWQ","EWG","EWA",
-      "EWT","EWY","EWN","INDA","EWD","EWH","EWI","EWP","EDEN","EWZ",
-      "EFNL","RSX","EZA","KSA","EWK","THD","EWM","EWS","EWW", "ENOR",
-      "EIS","EIDO","EPOL", "QAT","TUR","ENZL", "PGAL", "ECH","EPHE","EWO","EIRL"],
+      vtEtfs: [
+        "VT",
+        "VTI",
+        "EWJ",
+        "EWU",
+        "MCHI",
+        "EWL",
+        "EWC",
+        "EWQ",
+        "EWG",
+        "EWA",
+        "EWT",
+        "EWY",
+        "EWN",
+        "INDA",
+        "EWD",
+        "EWH",
+        "EWI",
+        "EWP",
+        "EDEN",
+        "EWZ",
+        "EFNL",
+        "RSX",
+        "EZA",
+        "KSA",
+        "EWK",
+        "THD",
+        "EWM",
+        "EWS",
+        "EWW",
+        "ENOR",
+        "EIS",
+        "EIDO",
+        "EPOL",
+        "QAT",
+        "TUR",
+        "ENZL",
+        "PGAL",
+        "ECH",
+        "EPHE",
+        "EWO",
+        "EIRL",
+      ],
       etfs: [],
       datacollection: {},
       options: {},
       lightweightData: {},
-      isRes: false
+      isRes: false,
     };
   },
   created() {
@@ -46,8 +90,8 @@ export default {
   methods: {
     etfData(lightweightData, etf) {
       const data = !lightweightData[etf] ? [] : lightweightData[etf];
-      data['name'] = etf
-      return data
+      data["name"] = etf;
+      return data;
     },
     chartData(datacollection, etf) {
       const data = !datacollection[etf] ? [] : datacollection[etf].periodPrice;
@@ -67,7 +111,7 @@ export default {
       };
     },
     fillData(res) {
-      this.isRes = res.status === 200 ? true : false
+      this.isRes = res.status === 200 ? true : false;
       this.lightweightData = res.data.etf;
       this.datacollection = res.data.etf;
       this.options = {
@@ -110,5 +154,11 @@ export default {
   /* box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.4); */
   border-radius: 20px;
   margin: 50px 0;
+}
+.btn-to-top {
+  width: 50px;
+  height: 30px;
+  font-size: 22px;
+  line-height: 22px;
 }
 </style>
