@@ -9,14 +9,14 @@ var _ = require('lodash');
 
 let etfStock = [
   'ARGT','EWA','EWO','EWK','EWZ','EWC','ECH','MCHI','ICOL','EDEN',
-  'EGPT','EFNL','EWQ','EWG','GREK','EWH','INDA','EIDO','EIRL',
+  'EGPT','EFNL','EWQ','EWG','FLZA','GREK','EWH','INDA','EIDO','EIRL',
   'EIS','EWI','EWJ','EWY','EWM','EWW','EWN','ENZL','NGE','ENOR',
   'PAK','EPU','EPHE','EPOL','PGAL','QAT','RSX','KSA','EWS','EZA',
   'EWP','EWD','EWL','EWT','THD','TUR','UAE','EWU','VOO','VNM'
 ] 
 let idStock = [
   'ARG','AUS','AUT','BEL','BRA','CAN','CHL','CHN','COL','DNK',
-  'EGY','FIN','FRA','DEU','GRC','HKG','IND','IDN','IRL',
+  'EGY','FIN','FRA','DEU','ZAF','GRC','HKG','IND','IDN','IRL',
   'ISR','ITA','JPN','KOR','MYS','MEX','NLD','NZL','NGA','NOR',
   'PAK','PER','PHL','POL','PRT','QAT','RUS','SAU','SGP','ZAF',
   'ESP','SWE','CHE','TWN','THA','TUR','ARE','GBR','USA','VNM'
@@ -25,7 +25,7 @@ let idStock = [
 const etfIdObj =  _.zipObject(etfStock, idStock);
 
 
-let retObj = {} , updown = {}, countries = {}
+let retObj = {}
 var historical = function (symbol, from, to, callback) {
     yahooFinance.historical(
     {
@@ -71,7 +71,14 @@ var historical = function (symbol, from, to, callback) {
 }
 
 
-let arrStock = ['VT','VTI','VGK','VPL','VWO','ARGT','EWA','EWO','EWK','EWZ','EWC','ECH','EWC','MCHI','ICOL','EDEN','EGPT','EFNL','EWQ','EWG','GREK','EWH','INDA','EIDO','EIRL','EIS','EWI','EWJ','EWY','EWM','EWW','EWN','ENZL','NGE','ENOR','PAK','EPU','EPHE','EPOL','PGAL','QAT','RSX','KSA','EWS','EZA','EWP','EWD','EWL','EWT','THD','TUR','UAE','EWU','VOO','VNM'] 
+let arrStock = ['VT','VTI','VGK','VPL','VWO','ARGT','EWA','EWO','EWK','EWZ',
+'EWC','ECH','EWC','MCHI','ICOL','EDEN','EGPT','EFNL','EWQ','EWG','FLZA','GREK',
+'EWH','INDA','EIDO','EIRL','EIS','EWI','EWJ','EWY','EWM','EWW',
+'EWN','ENZL','NGE','ENOR','PAK','EPU','EPHE','EPOL','PGAL','QAT',
+'RSX','KSA','EWS','EZA','EWP','EWD','EWL','EWT','THD','TUR','UAE','EWU','VOO','VNM',
+'AFK','AIA','ASEA','BKF',
+'BOTZ','BUG','CARZ','CLOU','DRIV','ESPO','FDN',
+'COPX',] 
 
 const d = new Date();
 const today = d.toISOString().substring(0, 10);
