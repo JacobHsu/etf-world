@@ -77,6 +77,7 @@ let arrStock = ['VT','VTI','VGK','VPL','VWO','ARGT','EWA','EWO','EWK','EWZ',
 'EWN','ENZL','NGE','ENOR','PAK','EPU','EPHE','EPOL','PGAL','QAT',
 'RSX','KSA','EWS','EZA','EWP','EWD','EWL','EWT','THD','TUR','UAE','EWU','VOO','VNM',
 'AFK','AIA','ASEA','BKF',
+'EMB',
 'BOTZ','BUG','CARZ','CLOU','DRIV','ESPO','FDN',
 'COPX',] 
 

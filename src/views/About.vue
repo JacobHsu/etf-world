@@ -2,12 +2,17 @@
   <div class="about">
     <h1>ETFs</h1>
     <el-row>
-      <el-col :span="12">
+      <el-col :span="8">
         <div v-for="etf in vtEtfs" :key="etf.id">
           <lightweight v-if="isRes" :cdata="etfData(datacollection, etf)" />
         </div>
       </el-col>
-      <el-col :span="12">
+      <el-col :span="8">
+        <div v-for="etf in emb" :key="etf.id">
+          <lightweight v-if="isRes" :cdata="etfData(datacollection, etf)" />
+        </div>
+      </el-col>
+      <el-col :span="8">
         <div v-for="etf in ideaEtfs" :key="etf.id">
           <lightweight v-if="isRes" :cdata="etfData(datacollection, etf)" />
         </div>
@@ -88,6 +93,7 @@ export default {
         "EWO",
         "EIRL",
       ],
+      emb:['EMB','EWW','EIDO','KSA','QAT','RSX','EPHE','TUR','EWZ','ICOL'],
       ideaEtfs: ['BOTZ','BUG','CARZ','CLOU','DRIV','ESPO','FDN'],
       etfs: [],
       datacollection: {},
