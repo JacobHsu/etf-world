@@ -76,9 +76,10 @@ let arrStock = ['VT','VTI','VGK','VPL','VWO','ARGT','EWA','EWO','EWK','EWZ',
 'EWH','INDA','EIDO','EIRL','EIS','EWI','EWJ','EWY','EWM','EWW',
 'EWN','ENZL','NGE','ENOR','PAK','EPU','EPHE','EPOL','PGAL','QAT',
 'RSX','KSA','EWS','EZA','EWP','EWD','EWL','EWT','THD','TUR','UAE','EWU','VOO','VNM',
-'AFK','AIA','ASEA','BKF',
+'AFK','AIA','BKF',
 'EMB',
-'BOTZ','BUG','CARZ','CLOU','DRIV','ESPO','FDN',
+'ASEA',
+'BOSS','BOTZ','BUG','CARZ','CLOU','DRIV','ESPO','FDN','POTX',
 'COPX',] 
 
 const d = new Date();
