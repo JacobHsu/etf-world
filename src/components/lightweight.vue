@@ -6,6 +6,7 @@
 </template>
 <script>
 // import  _ from 'lodash';
+import isos from '../data/iso.json'
 import { createChart } from "lightweight-charts";
 export default {
   name: 'lightweight',
@@ -25,7 +26,10 @@ export default {
   mounted () {
     this.$refs.chartRef.style.position = 'relative';
     var firstRow = document.createElement('div');
-    firstRow.innerText = this.cdata.name;
+    //firstRow.innerText = this.cdata.name;
+    const etfName = this.cdata.name; 
+    let iso = !isos[etfName] ? '' : ' <span class="'+`flag-icon flag-icon-${isos[etfName]}`+'" aria-label="Flag"></span>' ;//`<span style="color:gray"><em>(${isos[etfName]})</em></span>`;
+    firstRow.innerHTML = etfName + iso;
     firstRow.classList.add('legend');
     this.$refs.chartRef.appendChild(firstRow);
 
