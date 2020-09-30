@@ -1,5 +1,8 @@
-{ "ARGT":"ar", "EWA":"au", "EWO":"at", "EWK":"at", "EWZ":"be",
-  "EWC":"ca","EWS":"sg", "EWW": "mx",  "EPHE":"ph","ECH":"cl",
-  "MCHI":"cn", "ICOL":"co","EDEN":"dk", "EGPT":"eg","EFNL": "fi",
-  "EWQ": "fr","EWG": "de", "GREK": "gr", "EWH": "hk", "INDA": "in",
-  "EIDO":"id", "EIRL": "ie", "EIS": "il", "EWI": "it","EWJ": "jp" }
+{ "ARGT":"ar", "EWA":"au", "EWO":"at", "EWK":"be", "EWZ":"br",
+  "EWC":"ca", "ECH":"cl", "MCHI":"cn", "ICOL":"co", "EDEN":"dk", 
+  "EGPT":"eg","EFNL": "fi", "EWQ": "fr", "EWG": "de", "GREK": "gr", 
+  "EWH": "hk", "INDA":"in", "EIDO":"id", "EIRL": "ie", "EIS": "il", 
+  "EWI": "it","EWJ": "jp", "EWY": "kr",  "EWM": "my", "EWW": "mx", 
+  "EWN": "nl", "ENZL": "nz", "NGE": "ng", "ENOR": "no", "PAK": "pk", 
+  "EPU": "pe", "EPHE": "ph", "EPOL": "pl","PGAL": "pt", "QAT": "qa", 
+  "RSX": "ru", "KSA": "sa", "EWS": "sg", "EZA": "za", "EWP": "es"}
