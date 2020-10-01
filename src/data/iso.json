@@ -5,4 +5,6 @@
   "EWI": "it","EWJ": "jp", "EWY": "kr",  "EWM": "my", "EWW": "mx", 
   "EWN": "nl", "ENZL": "nz", "NGE": "ng", "ENOR": "no", "PAK": "pk", 
   "EPU": "pe", "EPHE": "ph", "EPOL": "pl","PGAL": "pt", "QAT": "qa", 
-  "RSX": "ru", "KSA": "sa", "EWS": "sg", "EZA": "za", "EWP": "es"}
+  "RSX": "ru", "KSA": "sa", "EWS": "sg", "EZA": "za", "EWP": "es",
+  "EWD": "se", "EWL": "ch", "EWT": "tw", "THD": "th", "TUR": "tr",
+  "UAE": "ae", "EWU": "gb", "VOO": "us", "VNM": "vn"  }
