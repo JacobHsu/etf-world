@@ -80,7 +80,9 @@ let arrStock = ['VT','VTI','VGK','VPL','VWO','ARGT','EWA','EWO','EWK','EWZ',
 'EMB',
 'ASEA',
 'BOSS','BOTZ','BUG','CARZ','CLOU','DRIV','ESPO','FDN','POTX',
-'COPX',] 
+'COPX',
+'IYW','XLB','XLC','XLE','XLF','XLI','XLP','XLU','XLV','XLY',
+'CHIK','CHIM','CHIC','CHIE','CHIX','CHII','CHIS','CHIU','CHIH','CHIQ'] 
 
 const d = new Date();
 const today = d.toISOString().substring(0, 10);

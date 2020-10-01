@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Europe from './views/Europe.vue'
+import Tradewar from './views/Tradewar.vue'
 
 Vue.use(Router)
 
@@ -18,6 +19,11 @@ export default new Router({
       path: '/europe',
       name: 'europe',
       component: Europe
+    },
+    {
+      path: '/tradewar',
+      name: 'tradewar',
+      component: Tradewar
     },
     {
       path: '/about',
