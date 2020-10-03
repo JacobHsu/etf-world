@@ -15,6 +15,9 @@
         </div>
       </el-col>
       <el-col :span="6">
+        <div v-for="etf in VPL" :key="etf.id">
+          <lightweight v-if="isRes" :cdata="etfData(datacollection, etf)" />
+        </div>
       </el-col>
     </el-row>
 
@@ -38,6 +41,7 @@ export default {
   data() {
     return {
       VGK:['VGK','EWU','EWL','EWG','EWQ','EWN','EWD','EWI','EDEN','EWP','EFNL','EWK','ENOR','EIRL','EPOL','EWO','PGAL'],
+      VPL:['VPL','EWJ','EWA','EWY','EWH','EWS','ENZL'],
       VT: [
         "VT",
         "VTI",
