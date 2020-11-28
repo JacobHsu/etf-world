@@ -17,6 +17,11 @@ highmaps_world.html
 [css_colors](https://www.w3schools.com/cssref/css_colors.asp)  
 tradingview [lightweight-charts](https://tw.tradingview.com/lightweight-charts/) [圖例](https://jsfiddle.net/TradingView/dtehqksw/)
 
+## server
+
+`$ cd server`  
+`$ npm i`
+
 ## heroku 
 
 https://github.com/JacobHsu/node-etfs-api
