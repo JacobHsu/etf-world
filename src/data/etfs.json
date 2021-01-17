@@ -51,5 +51,31 @@
         { "id": "GBR", "iso": "gb", "country": "United Kingdom", "name":"英國", "etf": "EWU" },
         { "id": "USA", "iso": "us", "country": "United States", "name":"美國", "etf": "VOO" },
         { "id": "VNM", "iso": "vn", "country": "Viet Nam", "name":"越南", "etf": "VNM" }
+    ],
+    "table3": [
+        { "id": "AAXJ", "index": "全亞洲不含日本", "name":"iShares MSCI All Country Asia ex Japan ETF", "etf": "AAXJ" },
+        { "id": "AFK", "index": "非洲指數", "name":"VanEck Vectors Africa ETF", "etf": "AFK" },
+        { "id": "AIA", "index": "亞洲50指數", "name":"iShares Asia 50 ETF", "etf": "AIA" },
+        { "id": "ANGL", "index": "高收益債券", "name":"VanEck Vectors Fallen Angel High Yield Bond ETF", "etf": "ANGL" },
+        { "id": "ASEA", "index": "東南亞指數", "name":"Global X FTSE Southeast Asia ETF", "etf": "ASEA" },
+        { "id": "ASHR", "index": "滬深300中國A股", "name":"Xtrackers Harvest CSI 300 China A", "etf": "ASHR" },
+        { "id": "AWAY", "index": "旅游科技", "name":"ETFMG Travel Tech ETF", "etf": "AWAY" },
+        { "id": "BKF", "index": "金磚四國", "name":"iShares MSCI BRIC ETF", "etf": "BKF" },
+        { "id": "BLV", "index": "長期債券", "name":"Vanguard Long-Term Bond ETF", "etf": "BLV" },
+        { "id": "BND", "index": "總體債券市場", "name":"Vanguard Total Bond Market ETF", "etf": "BND" },
+        { "id": "BNDX", "index": "國際債券", "name":"Vanguard Total International Bond ETF", "etf": "BNDX" },
+        { "id": "BWX", "index": "國際政府債券", "name":"SPDR Bloomberg Barclays International Treasury Bond ETF", "etf": "BWX" },
+        { "id": "COPX", "index": "銅礦", "name":"Global X Copper Miners ETF", "etf": "COPX" },
+        { "id": "DBB", "index": "基本金屬", "name":"Invesco DB Base Metals Fund", "etf": "DBB" },
+        { "id": "DBC", "index": "原物料", "name":"Invesco DB Commodity Index Tracking Fund", "etf": "DBC" },
+        { "id": "DIA", "index": "道瓊工業平均指數", "name":"SPDR Dow Jones Industrial Average ETF", "etf": "DIA" },
+        { "id": "DOG", "index": "看空道瓊30指數", "name":"ProShares Short Dow30", "etf": "DOG" },
+        { "id": "EBND", "index": "新興市場當地債券", "name":"SPDR Bloomberg Barclays Emerging Markets Local Bond ETF", "etf": "EBND" },
+        { "id": "EEM", "index": "新興市場", "name":"iShares MSCI Emerging Markets ETF", "etf": "EEM" },
+        { "id": "EFA", "index": "歐澳遠東", "name":"iShares MSCI EAFE ETF", "etf": "EFA" },
+        { "id": "EMB", "index": "新興市場債", "name":"iShares JP Morgan USD Emerging Markets", "etf": "EMB" },
+        { "id": "ESGV", "index": "ESG永續", "name":"Vanguard ESG U.S. Stock ETF", "etf": "ESGV" },
+        { "id": "ESPO", "index": "電競", "name":"VanEck Vectors Video Gaming and eSports ETF", "etf": "ESPO" },
+        { "id": "FDN", "index": "網路股指數", "name":"First Trust DJ Internet Index F", "etf": "FDN" }
     ]
 }

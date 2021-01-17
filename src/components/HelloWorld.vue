@@ -1,11 +1,14 @@
 <template>
   <div class="hello">
-    <!-- <h1>{{ msg }}</h1> -->
     <div class="pure-u-1 pure-u-lg-1-3 pure-u-xl-1-5" style="max-width: 580px;">
         <etf-table :etfs="table1"/>
     </div>
     <div class="pure-u-1 pure-u-lg-1-3 pure-u-xl-1-5" style="max-width: 690px;">
         <etf-table :etfs="table2"/>
+    </div>
+    <hr>
+    <div class="pure-u-1 pure-u-lg-1-3 pure-u-xl-1-5" style="max-width: 1020px;">
+        <etfs :etfs="table3"/>
     </div>
 
   </div>
@@ -14,18 +17,21 @@
 <script>
 import tableData from '../data/etfs.json'
 import EtfTable from '@/components/EtfTable.vue'
+import Etfs from '@/components/Etfs.vue'
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
   },
   components: {
-    EtfTable
+    EtfTable,
+    Etfs
   },
   data() {
     return {
       table1: tableData.table1,
-      table2: tableData.table2
+      table2: tableData.table2,
+      table3: tableData.table3
     }
   },
   created () {

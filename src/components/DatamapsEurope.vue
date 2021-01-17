@@ -43,8 +43,7 @@ export default {
         borderWidth: 2,
         highlightFillColor: '#1C977A',
         popupOnHover: false,
-        highlightOnHover: false,
-        dataUrl:'world.json',
+        highlightOnHover: false
       },
       data: {
         'blue': { fillKey: 'active' }
