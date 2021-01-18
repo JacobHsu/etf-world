@@ -13,7 +13,7 @@
     "remote:start": "serve -s dist -l 80"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "chart.js": "^2.9.3",
     "core-js": "^2.6.5",
     "d3": "^5.16.0",
