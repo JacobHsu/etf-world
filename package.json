@@ -9,7 +9,8 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "deploy": "yarn build && gh-pages -d dist",
-    "server": "node ./server/index"
+    "server": "node ./server/index",
+    "remote:start": "serve -s dist -l 80"
   },
   "dependencies": {
     "axios": "^0.19.2",

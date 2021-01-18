@@ -21,10 +21,11 @@
 </template>
 
 <script>
+
 import axios from 'axios'
 import bubblesData from '../data/bubbles.json'
 import { VueDatamaps } from 'vue-datamaps'
-
+import { world } from '../data/index'
 export default {
   components: {
     VueDatamaps,
@@ -37,12 +38,15 @@ export default {
         // labelColor: '#fff',
         // lineWidth: 1,
       },
+      scope: world,
       geographyConfig: {
         borderColor: '#DEDEDE',
         borderWidth: 2,
         highlightFillColor: '#1C977A',
         popupOnHover: false,
-        highlightOnHover: false
+        highlightOnHover: false,
+        // dataUrl: '',
+        // dataUrl: '//raw.githubusercontent.com/Seungwoo321/vue-datamaps/master/demo/example-vue-cli3/public/data/world.json'
       },
       data: {
         'blue': { fillKey: 'active' }
