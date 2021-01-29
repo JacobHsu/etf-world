@@ -76,6 +76,14 @@
         { "id": "EMB", "index": "新興市場債", "name":"iShares JP Morgan USD Emerging Markets", "etf": "EMB" },
         { "id": "ESGV", "index": "ESG永續", "name":"Vanguard ESG U.S. Stock ETF", "etf": "ESGV" },
         { "id": "ESPO", "index": "電競", "name":"VanEck Vectors Video Gaming and eSports ETF", "etf": "ESPO" },
-        { "id": "FDN", "index": "網路股指數", "name":"First Trust DJ Internet Index F", "etf": "FDN" }
+        { "id": "FDN", "index": "網路股指數", "name":"First Trust DJ Internet Index F", "etf": "FDN" },
+        { "id": "FINX", "index": "金融科技", "name":"Find the latest Global X FinTech ETF", "etf": "FINX" },
+        { "id": "FLZA", "index": "富時南非", "name":"Franklin FTSE South Africa ETF", "etf": "FLZA" },
+        { "id": "FM", "index": "邊境市場", "name":"MSCI Frontier Markets 100 Index", "etf": "FM" },
+        { "id": "FXA", "index": "澳幣", "name":"Invesco CurrencyShares Australian Dollar ETF", "etf": "FXA" },
+        { "id": "FXB", "index": "英鎊", "name":"Invesco CurrencyShares British Pound ETF", "etf": "FXB" },
+        { "id": "FXE", "index": "歐元", "name":"Invesco CurrencyShares Euro Cur ETF", "etf": "FXE" },
+        { "id": "FXI", "index": "中國大型股", "name":"iShares China Large-Cap ETF", "etf": "FXI" },
+        { "id": "FXY", "index": "日圓", "name":"Invesco CurrencyShares Japanese Yen Trust ETF", "etf": "FXY" }
     ]
 }
