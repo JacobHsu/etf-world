@@ -84,6 +84,11 @@
         { "id": "FXB", "index": "英鎊", "name":"Invesco CurrencyShares British Pound ETF", "etf": "FXB" },
         { "id": "FXE", "index": "歐元", "name":"Invesco CurrencyShares Euro Cur ETF", "etf": "FXE" },
         { "id": "FXI", "index": "中國大型股", "name":"iShares China Large-Cap ETF", "etf": "FXI" },
-        { "id": "FXY", "index": "日圓", "name":"Invesco CurrencyShares Japanese Yen Trust ETF", "etf": "FXY" }
+        { "id": "FXY", "index": "日圓", "name":"Invesco CurrencyShares Japanese Yen Trust ETF", "etf": "FXY" },
+        { "id": "GDX", "index": "金礦指數", "name":"VanEck Vectors Gold Miners ETF", "etf": "GDX" },
+        { "id": "GLD", "index": "黃金", "name":"SPDR Gold Shares ETF", "etf": "GLD" },
+        { "id": "GOVT", "index": "美國公債", "name":"iShares U.S. Treasury Bond ETF", "etf": "GOVT" },
+        { "id": "GXC", "index": "中國", "name":"SPDR S&P China ETF", "etf": "GXC" },
+        { "id": "HEEM", "index": "市場匯率避險", "name":"iShares Currency Hedged MSCI Emerging Markets ETF", "etf": "HEEM" }
     ]
 }
