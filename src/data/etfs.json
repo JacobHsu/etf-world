@@ -100,7 +100,13 @@
         { "id": "IPAY", "index": "移動支付", "name":"ETFMG Prime Mobile Payments ETF", "etf": "IPAY" },
         { "id": "ITA", "index": "航太與國防", "name":"iShares U.S. Aerospace & Defense ETF", "etf": "ITA" },
         { "id": "IYR", "index": "房地產", "name":"iShares U.S. Real Estate ETF", "etf": "IYR" },
-        { "id": "IYT", "index": "運輸指數", "name":"iShares Transportation Average ETF", "etf": "IYT" }
-
+        { "id": "IYT", "index": "運輸指數", "name":"iShares Transportation Average ETF", "etf": "IYT" },
+        { "id": "JETS", "index": "全球噴射機", "name":"U.S. Global Jets ETF", "etf": "JETS" },
+        { "id": "JNK", "index": "高收益債", "name":"SPDR Bloomberg Barclays High Yield Bond ETF", "etf": "JNK" },
+        { "id": "LEMB", "index": "當地貨幣債券", "name":"iShares J.P. Morgan EM Local Currency Bond ETF", "etf": "LEMB" },
+        { "id": "MGC", "index": "美國大型股", "name":"Vanguard Mega Cap ETF", "etf": "MGC" },
+        { "id": "MXI", "index": "全球原物料", "name":"iShares Global Materials ETF", "etf": "MXI" },
+        { "id": "NOBL", "index": "股息貴族", "name":"ProShares S&P 500 Dividend Aristocrats ETF", "etf": "NOBL" },
+        { "id": "NULG", "index": "大型成長股", "name":"Nuveen ESG Large-Cap Growth ETF", "etf": "NULG" }
     ]
 }
