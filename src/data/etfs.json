@@ -107,6 +107,15 @@
         { "id": "MGC", "index": "美國大型股", "name":"Vanguard Mega Cap ETF", "etf": "MGC" },
         { "id": "MXI", "index": "全球原物料", "name":"iShares Global Materials ETF", "etf": "MXI" },
         { "id": "NOBL", "index": "股息貴族", "name":"ProShares S&P 500 Dividend Aristocrats ETF", "etf": "NOBL" },
-        { "id": "NULG", "index": "大型成長股", "name":"Nuveen ESG Large-Cap Growth ETF", "etf": "NULG" }
+        { "id": "NULG", "index": "大型成長股", "name":"Nuveen ESG Large-Cap Growth ETF", "etf": "NULG" },
+        { "id": "POTX", "index": "大麻", "name":"Global X Cannabis ETF", "etf": "POTX" },
+        { "id": "QQQ", "index": "納斯達克100", "name":"Invesco QQQ Trust ETF", "etf": "QQQ" },
+        { "id": "REET", "index": "不動產", "name":"iShares Global REIT ETF", "etf": "REET" },
+        { "id": "REZ", "index": "住宅", "name":"iShares Residential Real Estate ETF", "etf": "REZ" },
+        { "id": "RTH", "index": "零售業", "name":"VanEck Vectors Retail ETF", "etf": "RTH" },
+        { "id": "SDIV", "index": "高股利", "name":"Global X Superdividend ETF", "etf": "SDIV" },
+        { "id": "SDOW", "index": "放空道瓊", "name":"ProShares UltraPro Short Dow30", "etf": "SDOW" },
+        { "id": "SH", "index": "看空史坦普500", "name":"ProShares Short S&P500", "etf": "SH" },
+        { "id": "SHY", "index": "美國公債", "name":"iShares 1-3 Year Treasury Bond ETF", "etf": "SHY" }
     ]
 }
