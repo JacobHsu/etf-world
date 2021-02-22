@@ -3,6 +3,7 @@
     <div id="nav">
       <router-link to="/">World</router-link> |
       <router-link to="/europe">Europe</router-link> |
+      <a :href="'https://jacobhsu.github.io/etfs-admin'" target="_blank">Table</a> |
       <router-link to="/vanguard">Vanguard</router-link> |
       <router-link to="/tradewar">Trade War</router-link> |
       <router-link to="/about">About</router-link>

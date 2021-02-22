@@ -277,6 +277,18 @@
             "longitude": 126.977156
         },
         {
+            "name": "KWT",
+            "radius": 5,
+            "fillKey": "blue",
+            "iso": "kw",
+            "country": "Kuwait",
+            "centered": "KWT",
+            "capital": "Seoul",
+            "national": "科威特城",
+            "latitude": 30.672707979975964, 
+            "longitude": 47.976430467930754
+        },
+        {
             "name": "EWM",
             "radius": 5,
             "fillKey": "blue",
